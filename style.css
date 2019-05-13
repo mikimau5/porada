@@ -1,0 +1,68 @@
+body * {
+  font-family: arial;
+  text-align: center;
+  font-size: 24px;
+}
+
+button {
+  background-color: white;
+  padding: 5px 10px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: black;
+  color: white
+}
+
+.show {
+  margin: 50px 0;
+}
+
+h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+  overflow: hidden;
+  background: linear-gradient(to right, #f00, #ff0, #0ff, #0f0, #ffc800);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+@media (orientation: portrait) {
+  body * {
+    font-size: 22px;
+  }
+
+  input {
+    margin: 10px;
+  }
+
+  button {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 639px) {
+  body * {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+}
+
+@media (min-width:640px) and (max-width: 730px) {
+  body * {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+}
